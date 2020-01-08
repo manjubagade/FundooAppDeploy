@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./take-note.component.scss']
 })
 export class TakeNoteComponent implements OnInit {
-  
+  open:any=false;
 
   constructor(private noteService:NoteService, public router:Router,private snackBar:MatSnackBar) { }
 title=new FormControl('',[Validators.required])
@@ -24,6 +24,10 @@ setcolor;
 
   setColor(event){
     this.setcolor = event
+  }
+
+  changeDisplay(){
+    this.open= !this.open
   }
 
 

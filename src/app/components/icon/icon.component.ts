@@ -27,8 +27,8 @@ export class IconComponent implements OnInit {
   
    getLabels=[]
   //searchLabel:string;
-  private isarchive
-  private isDeleted
+  public isarchive
+  public isDeleted
   ngOnInit() {
     this.getNoteLabels()
     if(this.childMessage){
