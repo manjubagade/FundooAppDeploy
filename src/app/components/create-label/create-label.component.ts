@@ -69,8 +69,12 @@ export class CreateLabelComponent implements OnInit {
         duration: 3000,
       });
     })
-    //this.dialogRef.close();
+   // this.dialogRef.close();
 
+  }
+
+  close(){
+    this.dialogRef.close();
   }
   editLabels(labelid){
     var contents={

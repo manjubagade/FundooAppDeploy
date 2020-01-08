@@ -1,7 +1,7 @@
 <div class="main" fxFlex=100 fxFlex.xs=100 fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" >
   <mat-card fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" class="note-card" fxFlex=50 fxFlex.md=80 fxFlex.sm=75
     fxFlex.xs=100  [ngStyle]="{'background-color':setcolor }" >
-    <div *ngIf="!isOpen" (click)='changeDisplay()' class="heading" fxLayout="row" fxLayoutAlign="start center">
+    <div *ngIf="!open" (click)='changeDisplay()' class="heading" fxLayout="row" fxLayoutAlign="start center">
       <h5>Take a Note..</h5>
     </div>
 
